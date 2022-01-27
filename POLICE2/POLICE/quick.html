@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Quick Report</title>
+
+    <link rel="stylesheet" href="assets/stylesheet/main.css">
+
+  </head>
+
+  <body>
+
+   <!--HEADER-->
+   <div class="group2">
+        <header class="container group">
+            <div id="logo">
+                <a href="home.html">
+                    <img src="mlp.jpg"/>
+                </a>
+            </div>
+
+            <div class="heading">
+                <h1>MEGHALAYA POLICE,</h1>
+                <h1>Online Crime Reporting Portal</h1>
+                <h3 class="tagline">Your Safety, Our Responsibility!</h3>
+            </div>
+
+            <nav class="nav primary-nav">
+                <a href="home.html"><i class="fa fa-home"></i> Home </a>
+                <a href="helpline.html">Helpline </a>  
+                <a href="statistics.html">Statistics </a>
+                <a href="contact.html">Contact Us</a>
+                <a href="guide.html">User Guide</a>
+                <a href="prevention.html">Prevention</a>
+                <a href="signin.html">Log In</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="quick.html" class="active_quick glow">Quick Report</a>
+            </nav>
+        </header>
+    </div>
+
+    <div class = "container2">
+        <section>
+        
+            <form action="includes/login.php" method="post" style="border:1px solid #ccc">
+                <div class="formcontainer">
+                    <h1 style="text-align: center; color: red;">QUICK REPORT</h1>
+                    <p style="text-align: center; color: red; font-weight: bold;"> ONLY FOR EMERGENCY CASES</p>
+                    <hr> 
+                    
+                    <p style="font-weight: lighter; color: red;">NOTE: Quick Report does not require log in</p>
+                    <label for="contact" ><b>Full Name</b></label>
+                    <input type="text" class="input" placeholder="Enter your Full Name" name="name" required>
+          
+                    <label for="contact" ><b>Phone Number</b></label>
+                    <input type="number" class="input" placeholder="Enter Your Valid Contact Number" name="contact" required>
+
+                    <label for="location"><b>Location</b></label>
+                    <input type="text" class="input" placeholder="Enter your location" name="location" required>
+
+                    <label for="description"><b>Description</b></label><br><br>
+                    <textarea rows="6" cols="50" name="comment" form="usrform" placeholder="Give a description of the crime"></textarea>
+          
+                    <!-- <label>
+                    <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me<br>
+                    <input type="reset" class="reset">
+                    </label> -->
+                    <br><br>
+                    <input type="checkbox" name="remember" style="margin-bottom:15px; color: red;"> I agree that the information provided by me is correct and this is a case of emergency.<br>
+                    <br>
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button type="submit" name="login" class="signupbtn">Submit</button><br>
+                        <br><br>
+                    </div>
+                </div>
+          </form>
+        </section>
+        </div>
+
+    </div>
+
+</body>

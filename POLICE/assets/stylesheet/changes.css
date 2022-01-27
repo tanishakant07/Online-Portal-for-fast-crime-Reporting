@@ -1,0 +1,56 @@
+html
+{background-color:rgb(174, 196, 133);}
+body
+{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 100%;
+font-weight:normal;
+}
+
+.container header h1
+{margin: 0;
+    font-size: 200%; 
+    font-weight: 700;
+    color: rgb(74, 109, 5);
+    text-align: center;
+    text-shadow: 2px 5px 15px rgb(126, 167, 126);
+    
+}
+
+.content_area h1
+{font-size: 100%;
+font-weight: medium;
+color: rgb(127, 175, 29);
+line-height: 2;
+}
+
+header h2
+{margin: 0;
+    color: rgba(189, 22, 22, 0.918);
+text-align:left;
+font-size: 150%;
+text-shadow:10px 5px 10px rgb(219, 145, 189);
+line height: 100;}
+
+ul
+{text-align:left;}
+
+h3
+{font-size:120% ;
+    color: salmon;}    
+
+.container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.content_area 
+{border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    box-sizing: border-box;}

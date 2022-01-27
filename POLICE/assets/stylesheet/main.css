@@ -1,0 +1,370 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */ 
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, 
+address, big, cite, code, del, dfn, 
+em, img, ins, kbd, q, s, samp, small,
+ strike, strong, sub, sup, tt, var, 
+ b, u, i, center, dl, dt, dd, ol, ul, li, 
+ fieldset, form, label, legend, table, caption, 
+ tbody, tfoot, thead, tr, th, td, article, aside, 
+ canvas, details, embed, figure, figcaption, 
+ footer, header, hgroup, menu, nav, output, 
+ ruby, section, summary, time, mark, audio, video 
+ { margin: 0; padding: 0; border: 0; font-size: 100%; 
+    font: inherit; vertical-align: baseline; } 
+    /* HTML5 display-role reset for older browsers */ 
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+    { display: block; } 
+    body { line-height: 1; } 
+    ol, ul { list-style: none; } 
+    blockquote, q { quotes: none; } 
+    blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } 
+    table { border-collapse: collapse; border-spacing: 0; }
+
+
+    /* PREREQUISITES*/
+
+    h1, h2, h3, h4, h5 {
+        color: #100e81;
+    }
+    
+    h1, h3, h4, h5, p {
+        margin-bottom: 22px;
+    }
+    
+    h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        line-height: 44px;
+    }
+    
+    h3 {
+        font-size: 21px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    h5 {
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    strong {
+        font-weight: 400;
+    }
+    
+    em{
+        font-style: italic;
+    }
+
+
+    /*----------------------------------------------------------------------------*/
+
+    /*
+ ====================================
+ Clearfix
+ ====================================
+*/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+/*General*/
+ul
+{text-align:left;
+ list-style-type: circle;}
+    /*body*/
+    
+    body{
+        background-image:url("background3.jpg");
+        background-repeat: repeat;   
+    }
+
+
+/*header*/
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .group2{
+        background-image:url("background.jpg");
+        height: fit-content;
+    }
+
+    #logo img {
+        margin: 40px 0 10px 0;
+        float:left;
+        border-radius: 50%;
+        height: 180px;
+    }
+
+    .nav {
+        text-align: right;
+    }
+
+    /*heading*/
+    .heading{
+        margin: 40px 0 10px 0;
+        text-align: center;
+        line-height: 20px;
+    }
+    .heading h1{
+        font-style: serif;
+        font-size: 60px;
+        line-height: 40px;
+        font-weight: 800;
+        word-spacing: 7px;
+        color: rgb(248, 206, 20);
+    }
+    .heading h3{
+        font-size: 40px;
+        font-style: italic;
+        color: red;
+        line-height: 40px;
+        font-weight: 700;
+    }
+/* Add a black background color to the top navigation */
+    .primary-nav{
+        margin-top: 30px;
+        background-color: #333;
+        overflow: hidden;
+        
+    }
+/* Style the links inside the navigation bar */
+    .primary-nav a {
+        font-weight: 400;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        word-spacing: 2px;
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+/* Change the color of links on hover */
+    .primary-nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+/* Add a color to the active/current link */
+    .primary-nav a.active {
+    background-color: rgb(218, 181, 18);
+    color: white;
+     }
+
+/* Home Page*/
+.grid {
+    margin: 0 auto;
+    width: 960px;
+    background-color: white;
+}
+
+
+.grid,
+.col-1-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-1-2 {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.teaser{
+   
+}
+
+.teaser a:hover h3 {
+    color: #a9b2b9;
+}
+.box{
+    background-color:whitesmoke;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+.box h2{
+    background-color: khaki;
+    font-weight:900;
+}
+.box a{
+    color: white;
+    font-size: 20px;
+}
+.box p{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+/*Sign In Form*/
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+.input{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+}
+
+button:hover {
+  opacity:1;
+}
+.reset{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.formcontainer {
+  padding: 16px;
+}
+.formcontainer p{
+    font-weight:600;
+    font-size: 20px;
+}
+.formcontainer h1{
+    font-weight: 700;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+/*User Guide Page
+.guide h2{
+    text-align: center;
+    background-color: khaki;
+    font-weight: 900; 
+} */
+.guide ol{
+    padding-top: 20px;
+    padding-bottom: 20px;;
+    list-style-type: decimal ;
+    font-weight: 500;
+    font-size:21px;
+    line-height: 25px;
+    
+}
+.guide{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+
+/* Prevention */
+.container2 .head2 h1
+{margin: 0;
+    font-size: 200%; 
+    font-weight: 700;
+    
+    color: rgb(74, 109, 5);
+    text-align: center;
+    text-shadow: 2px 5px 15px rgb(126, 167, 126);  
+}
+
+.content_area h1
+{font-size: 100%;
+font-weight: medium;
+color: rgb(127, 175, 29);
+line-height: 2;
+}
+
+.head2 h2
+{margin: 0;
+    color: rgba(189, 22, 22, 0.918);
+text-align:left;
+font-size: 150%;
+text-shadow:10px 5px 10px rgb(219, 145, 189);
+line height: 100;}  
+
+.container2{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.content_area 
+{border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    box-sizing: border-box;} 
+    
